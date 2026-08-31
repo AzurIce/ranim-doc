@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["hanoi","hanoi_10","hanoi_5","solve_hanoi"]};

@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="glTF scene-graph import (opt-in via the `gltf` feature). glTF 2.0 scene-graph import into trees of `MeshItem`s, opt-in via the `gltf` cargo feature. The `gltf` crate itself is re-exported here, so callers can parse documents without their own matching dependency."><title>ranim_items::mesh::gltf - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../../static.files/rustdoc-650bd49d.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="ranim_items" data-themes="" data-resource-suffix="" data-rustdoc-version="1.99.0-nightly (ad3d0bc14 2026-07-31)" data-channel="nightly" data-search-js="search-cf4fc35e.js" data-stringdex-js="stringdex-b5109af9.js" data-settings-js="settings-170eb4bf.js" ><script src="../../../static.files/storage-41dd4d93.js"></script><script defer src="../sidebar-items.js"></script><script defer src="../../../static.files/main-417ebf0a.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-d4bd101e.css"></noscript><link rel="icon" href="https://raw.githubusercontent.com/AzurIce/ranim/refs/heads/main/assets/ranim.svg"><style>
+  canvas {
+    width: 100%;
+  }
+</style>
+<script type="module">
+  const rootPath = document.querySelector('meta[name="rustdoc-vars"]')?.dataset.rootPath ?? '';
+  window.ranim_examples = import(`${rootPath}ranim_examples/pkg/ranim_examples.js`).then(
+    ({ default: init, find_scene, preview_scene }) =>
+      init().then(() => ({ find_scene, preview_scene }))
+  );
+</script>
+
+</head><body class="rustdoc mod"><a class="skip-main-content" href="#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Module gltf</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><a class="logo-container" href="../../../ranim_items/index.html"><img src="https://raw.githubusercontent.com/AzurIce/ranim/refs/heads/main/assets/ranim.svg" alt="logo"></a><h2><a href="../../../ranim_items/index.html">ranim_<wbr>items</a><span class="version">0.2.1</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">Module gltf</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#mapping" title="Mapping">Mapping</a></li><li><a href="#scope" title="Scope">Scope</a></li><li><a href="#examples" title="Examples">Examples</a></li></ul><h3><a href="#reexports">Module Items</a></h3><ul class="block"><li><a href="#reexports" title="Re-exports">Re-exports</a></li><li><a href="#structs" title="Structs">Structs</a></li><li><a href="#enums" title="Enums">Enums</a></li><li><a href="#functions" title="Functions">Functions</a></li></ul></section><div id="rustdoc-modnav"><h2><a href="../index.html">In ranim_<wbr>items::<wbr>mesh</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../../index.html">ranim_items</a>::<wbr><a href="../index.html">mesh</a></div><h1>Module <span>gltf</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../../src/ranim_items/mesh/gltf.rs.html#1-700">Source</a> </span></div><span class="item-info"><div class="stab portability">Available on <strong>crate feature <code>gltf</code></strong> only.</div></span><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>glTF scene-graph import (opt-in via the <code>gltf</code> feature).
+glTF 2.0 scene-graph import into trees of <a href="../struct.MeshItem.html" title="struct ranim_items::mesh::MeshItem"><code>MeshItem</code></a>s, opt-in via the
+<code>gltf</code> cargo feature. The <code>gltf</code> crate itself is re-exported here, so
+callers can parse documents without their own matching dependency.</p>
+<p>Two loaders: <a href="fn.node_tree_from_path.html" title="fn ranim_items::mesh::gltf::node_tree_from_path"><code>node_tree_from_path</code></a>
+reads a <code>.glb</code> (embedded blob) or <code>.gltf</code> (external buffer files resolved
+relative to the file) from disk, and the I/O-free
+<a href="fn.node_tree_from_gltf.html" title="fn ranim_items::mesh::gltf::node_tree_from_gltf"><code>node_tree_from_gltf</code></a> takes a
+parsed document plus a buffer resolver.</p>
+<h2 id="mapping"><a class="doc-anchor" href="#mapping">§</a>Mapping</h2><div><table><thead><tr><th>glTF</th><th>ranim</th></tr></thead><tbody>
+<tr><td>node TRS / matrix</td><td><a href="../../hierarchy/struct.Node.html" title="struct ranim_items::hierarchy::Node"><code>Node</code></a> pose as a <a href="ranim_core::glam::DAffine3"><code>DAffine3</code></a> (<code>T * R * S</code>)</td></tr>
+<tr><td>node name (non-empty)</td><td><a href="../../hierarchy/struct.Node.html#structfield.id" title="field ranim_items::hierarchy::Node::id"><code>Node::id</code></a> (payload nodes fall back to the mesh name)</td></tr>
+<tr><td>node children</td><td><a href="../../hierarchy/struct.Node.html#method.children" title="method ranim_items::hierarchy::Node::children"><code>Node::children</code></a>, source order kept</td></tr>
+<tr><td>mesh (single primitive)</td><td>the node’s own payload <a href="../struct.MeshItem.html" title="struct ranim_items::mesh::MeshItem"><code>MeshItem</code></a></td></tr>
+<tr><td>mesh (multiple primitives)</td><td>primitive leaves before the children, identity transforms</td></tr>
+</tbody></table>
+</div>
+<p>glTF also addresses nodes by document index (animation channels,
+<code>skin.joints</code>) — <a href="struct.GltfTree.html#method.node" title="method ranim_items::mesh::gltf::GltfTree::node"><code>GltfTree::node</code></a>
+resolves that, <a href="../../hierarchy/struct.Node.html#method.by_id" title="method ranim_items::hierarchy::Node::by_id"><code>Node::by_id</code></a> resolves
+names. <code>POSITION</code>/indices/<code>NORMAL</code>/<code>COLOR_0</code> map to the <a href="../struct.MeshItem.html" title="struct ranim_items::mesh::MeshItem"><code>MeshItem</code></a>
+fields with zero-normals and default colors as the absent-attribute
+fallbacks; <code>COLOR_0</code> is stored as-is (no sRGB conversion for normalized
+integer variants).</p>
+<h2 id="scope"><a class="doc-anchor" href="#scope">§</a>Scope</h2>
+<p>Only the default scene imports (missing scene → empty tree). Cameras,
+lights, materials/textures (color comes from <code>COLOR_0</code> or whatever you
+set after loading), <code>TEXCOORD</code>/<code>TANGENT</code> streams, animations, skins,
+morph targets and all extensions are not interpreted — Draco-compressed
+primitives therefore import as empty meshes with a warning.
+Non-<code>TRIANGLES</code> modes import their indices unchanged after a warning.
+glTF’s mandated Y-up is converted to ranim’s Z-up by composing
+<code>Rx(π/2)</code> into the root pose — apply the inverse there for verbatim
+coordinates.</p>
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>ranim_items::mesh::gltf::node_tree_from_path;
+
+<span class="kw">let </span>tree = node_tree_from_path(<span class="string">"model.glb"</span>)<span class="question-mark">?</span>;</code></pre></div>
+<p>For custom I/O, parse yourself and hand over a buffer resolver:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>ranim_items::mesh::gltf::{gltf, node_tree_from_gltf};
+
+<span class="kw">let </span>bytes = std::fs::read(<span class="string">"model.gltf"</span>)<span class="question-mark">?</span>;
+<span class="kw">let </span>parsed = gltf::Gltf::from_slice(<span class="kw-2">&amp;</span>bytes)<span class="question-mark">?</span>;
+<span class="kw">let </span>blob = parsed.blob.clone();
+<span class="kw">let </span>tree = node_tree_from_gltf(<span class="kw-2">&amp;</span>parsed.document, |buffer| <span class="kw">match </span>buffer.source() {
+    gltf::buffer::Source::Bin =&gt; blob.as_deref(),
+    gltf::buffer::Source::Uri(<span class="kw">_</span>) =&gt; <span class="prelude-val">None</span>, <span class="comment">// read the file here
+</span>});</code></pre></div></div></details><h2 id="reexports" class="section-header">Re-exports<a href="#reexports" class="anchor">§</a></h2><dl class="item-table reexports"><dt id="reexport.gltf"><code>pub use gltf;</code></dt></dl><h2 id="structs" class="section-header">Structs<a href="#structs" class="anchor">§</a></h2><dl class="item-table"><dt><a class="struct" href="struct.GltfTree.html" title="struct ranim_items::mesh::gltf::GltfTree">Gltf<wbr>Tree</a></dt><dd>A glTF scene imported as a <a href="../../hierarchy/struct.Node.html" title="struct ranim_items::hierarchy::Node"><code>Node</code></a> tree, plus the mapping from glTF node
+indices to index paths in the tree.</dd></dl><h2 id="enums" class="section-header">Enums<a href="#enums" class="anchor">§</a></h2><dl class="item-table"><dt><a class="enum" href="enum.GltfLoadError.html" title="enum ranim_items::mesh::gltf::GltfLoadError">Gltf<wbr>Load<wbr>Error</a></dt><dd>Errors from loading a glTF/GLB file via <a href="fn.node_tree_from_path.html" title="fn ranim_items::mesh::gltf::node_tree_from_path"><code>node_tree_from_path</code></a>.</dd></dl><h2 id="functions" class="section-header">Functions<a href="#functions" class="anchor">§</a></h2><dl class="item-table"><dt><a class="fn" href="fn.node_transform.html" title="fn ranim_items::mesh::gltf::node_transform">node_<wbr>transform</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>Converts a glTF node transform to a [<code>DAffine3</code>]: the 4x4 matrix as-is, or
+the decomposed <code>T * R * S</code> (glTF semantics; the glTF crate’s
+[<code>gltf::scene::Transform::matrix</code>] uses the same equation).</dd><dt><a class="fn" href="fn.node_tree_from_gltf.html" title="fn ranim_items::mesh::gltf::node_tree_from_gltf">node_<wbr>tree_<wbr>from_<wbr>gltf</a></dt><dd>Builds the node tree of the default glTF scene as <a href="../../hierarchy/struct.Node.html" title="struct ranim_items::hierarchy::Node"><code>Node</code></a>s of
+<a href="../struct.MeshItem.html" title="struct ranim_items::mesh::MeshItem"><code>MeshItem</code></a>s, wrapped in a <a href="struct.GltfTree.html" title="struct ranim_items::mesh::gltf::GltfTree"><code>GltfTree</code></a> with the document-index →
+tree-path mapping.</dd><dt><a class="fn" href="fn.node_tree_from_gltf_node.html" title="fn ranim_items::mesh::gltf::node_tree_from_gltf_node">node_<wbr>tree_<wbr>from_<wbr>gltf_<wbr>node</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>Converts one glTF node (recursively, via [<code>gltf::scene::Node::children</code>]).</dd><dt><a class="fn" href="fn.node_tree_from_path.html" title="fn ranim_items::mesh::gltf::node_tree_from_path">node_<wbr>tree_<wbr>from_<wbr>path</a></dt><dd>Loads a <code>.glb</code> or <code>.gltf</code> file from disk into a <a href="struct.GltfTree.html" title="struct ranim_items::mesh::gltf::GltfTree"><code>GltfTree</code></a>.</dd><dt><a class="fn" href="fn.non_empty.html" title="fn ranim_items::mesh::gltf::non_empty">non_<wbr>empty</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd><code>None</code> for empty strings, so blank glTF names do not become ids.</dd><dt><a class="fn" href="fn.primitive_leaf_id.html" title="fn ranim_items::mesh::gltf::primitive_leaf_id">primitive_<wbr>leaf_<wbr>id</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>The id of the leaf holding primitive <code>index</code> of a mesh on a node: the mesh
+name when present (disambiguated by index), else the node name, else none.</dd><dt><a class="fn" href="fn.primitive_mesh_item.html" title="fn ranim_items::mesh::gltf::primitive_mesh_item">primitive_<wbr>mesh_<wbr>item</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>Converts one glTF primitive to a <a href="../struct.MeshItem.html" title="struct ranim_items::mesh::MeshItem"><code>MeshItem</code></a>.</dd><dt><a class="fn" href="fn.warn_if_not_triangles.html" title="fn ranim_items::mesh::gltf::warn_if_not_triangles">warn_<wbr>if_<wbr>not_<wbr>triangles</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>Warns when a primitive’s drawing mode is not <code>TRIANGLES</code> (its indices
+are imported as-is; no re-triangulation happens in the POC).</dd><dt><a class="fn" href="fn.y_up_to_z_up.html" title="fn ranim_items::mesh::gltf::y_up_to_z_up">y_<wbr>up_<wbr>to_<wbr>z_<wbr>up</a><span title="Restricted Visibility">&nbsp;🔒</span> </dt><dd>glTF mandates a right-handed Y-up; ranim is Z-up. The conversion is a
+fixed, spec-mandated convention translation, composed into the root
+pose so a loaded model stands upright and no vertex data moves.</dd></dl></section></div></main></body></html>

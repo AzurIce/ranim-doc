@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["CENTER_OFFSET","DEPTH","GRID_SIZE","LATTICE_CNT","P","RESOLUTION","U_MAX","U_MIN"],"fn":["build_terrain_scene","fade","fade_d","fractal_erosion","fractal_noise","fractal_perlin","fractal_with_derivative_noise","grad","noise","noise_with_derivative","perlin","perm","terrain_colorscale"]};

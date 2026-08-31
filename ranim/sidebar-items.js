@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["OutputFormat"],"fn":["find_scene"],"macro":[["lagged",1],["preview_scene",1],["render_scene",1],["seq",1],["stack",1]],"mod":["cmd","color","link_magic","prelude","scene","utils"],"struct":["Output","RanimScene","SceneConfig"],"trait":["SceneConstructor"]};

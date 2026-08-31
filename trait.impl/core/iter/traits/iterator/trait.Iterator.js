@@ -1,0 +1,9 @@
+(function() {
+    const implementors = Object.fromEntries([["ranim_cli",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/iter/traits/iterator/trait.Iterator.html\" title=\"trait core::iter::traits::iterator::Iterator\">Iterator</a> for <a class=\"struct\" href=\"ranim_cli/struct.RanimUserLibrarySceneIter.html\" title=\"struct ranim_cli::RanimUserLibrarySceneIter\">RanimUserLibrarySceneIter</a>&lt;'_&gt;",0]]],["ranim_items",[["impl&lt;'a, I, G&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/iter/traits/iterator/trait.Iterator.html\" title=\"trait core::iter::traits::iterator::Iterator\">Iterator</a> for <a class=\"struct\" href=\"ranim_items/hierarchy/struct.Leaves.html\" title=\"struct ranim_items::hierarchy::Leaves\">Leaves</a>&lt;'a, I, G&gt;<div class=\"where\">where\n    G: <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html\" title=\"trait core::clone::Clone\">Clone</a> + <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/convert/trait.Into.html\" title=\"trait core::convert::Into\">Into</a>&lt;DAffine3&gt;,</div>",0],["impl&lt;'a, I, G&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/iter/traits/iterator/trait.Iterator.html\" title=\"trait core::iter::traits::iterator::Iterator\">Iterator</a> for <a class=\"struct\" href=\"ranim_items/hierarchy/struct.LeavesMut.html\" title=\"struct ranim_items::hierarchy::LeavesMut\">LeavesMut</a>&lt;'a, I, G&gt;",0]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":59,"fragment_lengths":[377,1061]}

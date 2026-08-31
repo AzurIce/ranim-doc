@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["DEFAULT_STROKE_WIDTH"],"fn":["vitem_normal_from_points"],"struct":["VItem"]};

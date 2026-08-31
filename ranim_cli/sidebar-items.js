@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Target"],"fn":["build_user_library","cargo_build","get_dylib_path","init_tracing","load_user_library","main","resolve_build_target","select_scene","select_scene_from_slice"],"mod":["cli","workspace"],"struct":["BuildCancelled","BuildProcess","RanimUserLibrary","RanimUserLibraryBuilder","RanimUserLibrarySceneIter"]};

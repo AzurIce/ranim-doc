@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["build_group_node","build_path_leaf","parse_paint","rel_transform","usvg_transform_to_daffine2","vitems_from_svg","vitems_from_tree","widen_to_daffine3"],"struct":["SvgItem"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["bubble_sort","bubble_sort_10","bubble_sort_100"]};

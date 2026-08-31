@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["getting_started0"]};

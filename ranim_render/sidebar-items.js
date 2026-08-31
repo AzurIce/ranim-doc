@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["pipelines","primitives","profiling_utils","resource","schedule","utils","world"],"static":["PUFFIN_GPU_PROFILER"],"struct":["Renderer","ResolutionInfo"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["TimeMark"],"macro":[["impl_extract_for_tuple",1],["lagged",1],["seq",1],["stack",1]],"mod":["anchor","animation","color","components","core_item","prelude","scene_evaluator","sealed","time","traits","utils"],"struct":["RanimScene","SealedRanimScene"],"trait":["Extract"]};

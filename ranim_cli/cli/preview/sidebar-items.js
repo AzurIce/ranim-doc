@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["is_rebuild_event","is_vcs_metadata","preview_command","watch_krate"]};

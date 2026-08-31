@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["PrepareSystems","RenderGraphSystems","ViewSystems"],"fn":["begin_frame","clear","finish_frame","install_schedules","prepare_mesh_items","prepare_vitems","submit","take_single_camera","view_driver"],"struct":["FrameEncoder","FrameTarget","RenderContext","RenderDimensions","RenderGraph","RenderPrepare","RenderProfiler","ViewRender"]};

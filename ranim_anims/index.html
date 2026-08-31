@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Ranim’s built-in animation families."><title>ranim_anims - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../static.files/rustdoc-650bd49d.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="ranim_anims" data-themes="" data-resource-suffix="" data-rustdoc-version="1.99.0-nightly (ad3d0bc14 2026-07-31)" data-channel="nightly" data-search-js="search-cf4fc35e.js" data-stringdex-js="stringdex-b5109af9.js" data-settings-js="settings-170eb4bf.js" ><script src="../static.files/storage-41dd4d93.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-417ebf0a.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-d4bd101e.css"></noscript><link rel="icon" href="https://raw.githubusercontent.com/AzurIce/ranim/refs/heads/main/assets/ranim.svg"><style>
+  canvas {
+    width: 100%;
+  }
+</style>
+<script type="module">
+  const rootPath = document.querySelector('meta[name="rustdoc-vars"]')?.dataset.rootPath ?? '';
+  window.ranim_examples = import(`${rootPath}ranim_examples/pkg/ranim_examples.js`).then(
+    ({ default: init, find_scene, preview_scene }) =>
+      init().then(() => ({ find_scene, preview_scene }))
+  );
+</script>
+
+</head><body class="rustdoc mod crate"><a class="skip-main-content" href="#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Crate ranim_anims</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><a class="logo-container" href="../ranim_anims/index.html"><img src="https://raw.githubusercontent.com/AzurIce/ranim/refs/heads/main/assets/ranim.svg" alt="logo"></a><h2><a href="../ranim_anims/index.html">ranim_<wbr>anims</a><span class="version">0.2.1</span></h2></div><div class="sidebar-elems"><ul class="block"><li><a id="all-types" href="all.html">All Items</a></li></ul><section id="rustdoc-toc"><h3><a href="#modules">Crate Items</a></h3><ul class="block"><li><a href="#modules" title="Modules">Modules</a></li></ul></section><div id="rustdoc-modnav"></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><h1>Crate <span>ranim_<wbr>anims</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../src/ranim_anims/lib.rs.html#1-69">Source</a> </span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Ranim’s built-in animation families.</p>
+<p>Each module contains named, closed-form animation types plus the
+convenience traits used to construct them from an item (e.g.
+<a href="fading/trait.FadingAnim.html" title="trait ranim_anims::fading::FadingAnim"><code>fading::FadingAnim</code></a>). Every animation type implements
+<a href="../ranim_core/animation/eval/trait.Eval.html" title="trait ranim_core::animation::eval::Eval"><code>Eval</code></a> directly; generic authoring adapters
+live in <code>ranim_core::animation</code>:</p>
+<ul>
+<li><a href="../ranim_core/animation/eval/pure/struct.Pure.html" title="struct ranim_core::animation::eval::pure::Pure"><code>Pure</code></a> wraps a raw
+<code>Fn(f64) -&gt; T</code> closure into an <code>Eval</code>;</li>
+<li><a href="../ranim_core/animation/eval/iterative/struct.Iterative.html" title="struct ranim_core::animation::eval::iterative::Iterative"><code>Iterative</code></a> turns an
+<a href="../ranim_core/animation/eval/iterative/trait.IterativeEval.html" title="trait ranim_core::animation::eval::iterative::IterativeEval"><code>IterativeEval</code></a> step function
+into a stateful <code>Eval</code>.</li>
+</ul>
+<p>A built-in animation is a struct that implements <code>Eval</code> together with the
+data its closed form needs. For example, <a href="fading/struct.FadeIn.html" title="struct ranim_anims::fading::FadeIn"><code>fading::FadeIn</code></a>:</p>
+
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">pub struct </span>FadeIn&lt;T: FadingRequirement&gt; {
+    src: T,
+    dst: T,
+}
+
+<span class="kw">impl</span>&lt;T: FadingRequirement&gt; Eval <span class="kw">for </span>FadeIn&lt;T&gt; {
+    <span class="kw">type </span>Output = T;
+
+    <span class="kw">fn </span>eval_alpha(<span class="kw-2">&amp;</span><span class="self">self</span>, alpha: f64) -&gt; <span class="self">Self</span>::Output {
+        <span class="self">self</span>.src.lerp(<span class="kw-2">&amp;</span><span class="self">self</span>.dst, alpha)
+    }
+}</code></pre></div>
+<p>Construction traits mutate the source item to its end state while building
+the animation:</p>
+
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">pub trait </span>FadingAnim: FadingRequirement + Sized + <span class="lifetime">'static </span>{
+    <span class="kw">fn </span>fade_in(<span class="kw-2">&amp;mut </span><span class="self">self</span>) -&gt; FadeIn&lt;<span class="self">Self</span>&gt;;
+    <span class="kw">fn </span>fade_out(<span class="kw-2">&amp;mut </span><span class="self">self</span>) -&gt; FadeOut&lt;<span class="self">Self</span>&gt;;
+}
+
+<span class="kw">impl</span>&lt;T: FadingRequirement + Sized + <span class="lifetime">'static</span>&gt; FadingAnim <span class="kw">for </span>T {
+    <span class="kw">fn </span>fade_in(<span class="kw-2">&amp;mut </span><span class="self">self</span>) -&gt; FadeIn&lt;<span class="self">Self</span>&gt; {
+        FadeIn::new(<span class="self">self</span>.clone()).apply_to(<span class="self">self</span>)
+    }
+
+    <span class="kw">fn </span>fade_out(<span class="kw-2">&amp;mut </span><span class="self">self</span>) -&gt; FadeOut&lt;<span class="self">Self</span>&gt; {
+        FadeOut::new(<span class="self">self</span>.clone()).apply_to(<span class="self">self</span>)
+    }
+}</code></pre></div></div></details><h2 id="modules" class="section-header">Modules<a href="#modules" class="anchor">§</a></h2><dl class="item-table"><dt><a class="mod" href="camera/index.html" title="mod ranim_anims::camera">camera</a></dt><dd>Camera frame animations.
+Camera frame animations.</dd><dt><a class="mod" href="creation/index.html" title="mod ranim_anims::creation">creation</a></dt><dd>Creation animations.</dd><dt><a class="mod" href="fading/index.html" title="mod ranim_anims::fading">fading</a></dt><dd>Fading animations.</dd><dt><a class="mod" href="morph/index.html" title="mod ranim_anims::morph">morph</a></dt><dd>Morph animations.</dd><dt><a class="mod" href="rotating/index.html" title="mod ranim_anims::rotating">rotating</a></dt><dd>Rotating animations.</dd></dl></section></div></main></body></html>

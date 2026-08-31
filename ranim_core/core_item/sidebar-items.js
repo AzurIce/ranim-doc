@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["CoreItem"],"mod":["camera_frame","mesh_item","transformed","vitem"],"struct":["DynItem"],"trait":["AnyExtractCoreItem"]};

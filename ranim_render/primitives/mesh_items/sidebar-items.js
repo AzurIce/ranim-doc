@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["bg_entry","bgl_storage_entry"],"struct":["MeshItemsBuffer","MeshTransform"]};

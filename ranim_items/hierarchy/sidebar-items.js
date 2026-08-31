@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["expand_with_transparent_repeats","lerp_items","transparent_clones"],"struct":["Leaves","LeavesMut","Node"],"trait":["PlacedLeaves"]};

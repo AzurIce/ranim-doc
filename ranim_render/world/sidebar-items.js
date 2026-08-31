@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["reconcile","replace_component"],"struct":["CoreItemEntities","CoreItemIdHasher","CoreItemIdentity","RenderFrame","SceneOrder"],"type":["CoreItemId","CoreItemIdBuildHasher","CoreItemIdMap","CoreItemIdSet"]};

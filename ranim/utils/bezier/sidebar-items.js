@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["approx_cubic_with_quadratic","cubic_bezier_eval","get_subpath_closed_flag","partial_quadratic_bezier","point_on_quadratic_bezier","quad_bezier_eval","split_cubic_bezier","split_quad_bezier","trim_cubic_bezier","trim_quad_bezier"],"struct":["PathBuilder"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["FadeIn","FadeOut"],"trait":["FadingAnim","FadingRequirement"]};

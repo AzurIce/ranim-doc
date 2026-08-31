@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["ALIGNMENT"],"struct":["ReadbackWgpuTexture","WgpuBuffer","WgpuContext","WgpuTexture","WgpuVecBuffer"]};

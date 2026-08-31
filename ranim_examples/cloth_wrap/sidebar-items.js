@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["BALL_RADIUS","BALL_SPEED","BALL_START_Y","BALL_STOP_Y","CLOTH_Y","COLS","DAMPING","K_BEND","K_SHEAR","K_STRUCTURAL","REPULSION_CUTOFF","REPULSION_K","ROWS","SPACING"],"fn":["cloth_wrap"],"struct":["ClothState"]};
