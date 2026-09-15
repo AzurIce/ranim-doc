@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["FADE_SECS","HOLD_SECS","MOVE_SECS","WAVE_DELAY_SECS"],"fn":["composable_choreography","tile_phrase","tile_row","wave"]};

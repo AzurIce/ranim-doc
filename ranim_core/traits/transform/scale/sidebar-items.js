@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["ScaleHint"],"trait":["ScaleTransform","ScaleTransformExt","ScaleTransformStrokeExt","UniformScaleTransform"]};

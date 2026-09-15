@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["GltfLoadError"],"fn":["node_transform","node_tree_from_gltf","node_tree_from_gltf_node","node_tree_from_path","non_empty","primitive_leaf_id","primitive_mesh_item","warn_if_not_triangles","y_up_to_z_up"],"struct":["GltfTree"]};

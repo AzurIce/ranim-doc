@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["iterative","pure"],"struct":["Static"],"trait":["Eval","EvalDyn","EvalExt","StaticAnim","StaticAnimRequirement"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["compile_typst_code","fonts","get_typst_element","typst_lru","typst_svg","typst_world"],"struct":["FileEntry","TypstLruCache","TypstText","TypstWorld","TypstWorldWithSource"]};

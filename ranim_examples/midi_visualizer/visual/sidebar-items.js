@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["FRAME_HEIGHT","FRAME_LEFT","FRAME_RIGHT","FRAME_WIDTH","HIT_EFFECT_SECS","HIT_X","KEYBOARD_WIDTH","KEY_ATTACK_SECS","KEY_RELEASE_SECS","NOTE_SPEED"],"fn":["is_black_key","make_background","rectangle","render_note","smoothstep","track_color"],"struct":["HitEffectsEval","MidiNotesEval","PianoKeyboardEval","PianoLayout","SingleNoteEval"]};

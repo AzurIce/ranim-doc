@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["BAR_WIDTH","CELL_WIDTH","GLYPH_HEIGHT","TIMER_Y"],"fn":["format_milliseconds","glyph_color","glyph_position","glyph_vitems","push_progress_bar","rectangle","timer_camera","timer_glyph_scale","timer_label","typst_timer_atlas","typst_timer_recompile"],"struct":["AtlasTimerEval","GlyphAtlas","RecompileTimerEval","Timer"]};

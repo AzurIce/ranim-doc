@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["bezier_aabb"],"struct":["VPointVec"]};

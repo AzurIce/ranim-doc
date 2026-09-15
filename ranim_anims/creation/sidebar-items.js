@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["Create","UnCreate","Unwrite","Write"],"trait":["CreationAnim","CreationRequirement","WritingAnim","WritingRequirement"]};
