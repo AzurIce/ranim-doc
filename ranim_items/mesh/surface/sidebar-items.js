@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["colorscale_lookup"],"struct":["Surface"]};

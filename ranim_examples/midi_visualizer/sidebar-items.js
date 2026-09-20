@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["camera","common_layers","midi_visualizer","midi_visualizer_per_note","render_song_audio"],"mod":["midi","visual"]};

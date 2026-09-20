@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["G","PALETTE","TRAIL_LEN","TRAIL_SAMPLE_EVERY"],"fn":["nbody"],"struct":["Body","NBodyState"]};

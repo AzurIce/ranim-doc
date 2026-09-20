@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["point","rgba","vpoint","width"],"struct":["PointVec"],"trait":["Component","VecResizeTrait"]};

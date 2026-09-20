@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["angle_between","compute_smooth_normals","generate_grid_indices"],"mod":["gltf","sphere","surface"],"struct":["MeshItem","Sphere","Surface"]};

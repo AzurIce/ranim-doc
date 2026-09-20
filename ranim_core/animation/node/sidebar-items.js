@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["AnimationInfoKind","NodeContent","Residual","ResidualLink"],"fn":["bake_audio","eval_sequence","eval_stack","static_cell"],"struct":["AnimNode","AnimationInfo","MixAff"]};
