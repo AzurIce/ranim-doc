@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"derive":["Resource"],"macro":[["lagged",1],["seq",1],["stack",1]],"mod":["app","cmd","color","prelude","utils"],"struct":["App","RanimScene"],"trait":["Plugin","Resource"]};

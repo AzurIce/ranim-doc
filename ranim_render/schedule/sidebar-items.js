@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["RenderSchedule","ViewPhase"],"fn":["begin_frame","clear","finish_frame","install_schedules","render_update","submit","view_driver"],"struct":["FrameEncoder","FrameTarget","RenderContext","RenderDimensions","RenderGraph","RenderProfiler","RenderUpdate"]};

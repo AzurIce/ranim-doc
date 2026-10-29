@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["Diag","NotSimilarity","Rigid","Similarity","Translation"],"trait":["TransformGroup"]};

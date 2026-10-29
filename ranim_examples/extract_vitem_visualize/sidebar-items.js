@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["configure_render","hello_ranim","ranim_text"],"struct":["ScenesPlugin","VisualVItem"]};

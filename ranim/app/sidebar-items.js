@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["OutputFormat"],"fn":["render_setup_of"],"mod":["scene"],"struct":["Output","RanimApp","Scene","SceneConfig","Scenes"],"trait":["AppExt","RanimAppExt","SceneConstructor"]};

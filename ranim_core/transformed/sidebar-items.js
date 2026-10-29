@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"macro":[["impl_transformed_widening",1]],"struct":["Transformed"],"trait":["TransformedExt"]};

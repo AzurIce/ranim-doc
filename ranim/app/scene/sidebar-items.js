@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["OutputFormat"],"struct":["HotSceneConstructor","Output","Scene","SceneConfig"],"trait":["SceneConstructor"]};

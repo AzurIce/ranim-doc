@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["install","vitem_normal_from_points"],"mod":["buffer","pipeline"],"struct":["RenderVItem"]};

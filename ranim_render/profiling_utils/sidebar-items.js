@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["scopes_to_console_recursive"]};

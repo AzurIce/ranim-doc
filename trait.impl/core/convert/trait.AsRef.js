@@ -1,0 +1,9 @@
+(function() {
+    const implementors = Object.fromEntries([["ranim_core",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;DVec3&gt; for <a class=\"struct\" href=\"ranim_core/components/point/struct.Point.html\" title=\"struct ranim_core::components::point::Point\">Point</a>",0],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;[DVec3]&gt; for <a class=\"struct\" href=\"ranim_core/components/vpoint/struct.VPointVec.html\" title=\"struct ranim_core::components::vpoint::VPointVec\">VPointVec</a>",0]]],["ranim_render",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;BindGroup&gt; for <a class=\"struct\" href=\"ranim_render/primitives/viewport/struct.ViewportBindGroup.html\" title=\"struct ranim_render::primitives::viewport::ViewportBindGroup\">ViewportBindGroup</a>",0],["impl&lt;T: Pod + Zeroable + <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html\" title=\"trait core::fmt::Debug\">Debug</a>&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;Buffer&gt; for <a class=\"struct\" href=\"ranim_render/utils/struct.WgpuBuffer.html\" title=\"struct ranim_render::utils::WgpuBuffer\">WgpuBuffer</a>&lt;T&gt;",0]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":59,"fragment_lengths":[644,845]}

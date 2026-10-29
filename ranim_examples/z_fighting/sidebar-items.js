@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["angled_ortho_camera","capture","circle","flicker","opaque_angled","opaque_front","setup_camera","square","translucent_front","z_precision","z_precision_angled","z_sweep"],"macro":[["pair",1],["pair_z",1]],"struct":["ScenesPlugin"]};

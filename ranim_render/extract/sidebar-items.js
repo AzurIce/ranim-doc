@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["extract_items"],"macro":[["impl_extract_for_tuple",1]],"struct":["ExtractContext","ExtractPlugin","ExtractedEntities","OutputEntity"],"trait":["Extract"],"type":["OutputId"]};

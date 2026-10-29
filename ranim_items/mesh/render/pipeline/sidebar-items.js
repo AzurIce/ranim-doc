@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["color","depth","prepare_mesh_items"],"struct":["MeshItemColorPipeline","MeshItemDepthPipeline"]};

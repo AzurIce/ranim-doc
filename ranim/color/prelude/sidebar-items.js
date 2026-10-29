@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["color","rgb","rgb8","rgba","rgba8","try_color"]};

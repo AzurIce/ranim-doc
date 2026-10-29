@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["bg_entry","bgl_entry"],"struct":["ItemInfo","PlaneData","VItemsBuffer","VitemTransform"]};

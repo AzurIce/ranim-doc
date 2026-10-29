@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["anchor","arc","circle","ellipse","elliptic_arc","line","parallelogram","polygon"],"struct":["Arc","ArcBetweenPoints","Circle","Ellipse","EllipticArc","Line","Parallelogram","Polygon","Rectangle","RegularPolygon","Square"]};

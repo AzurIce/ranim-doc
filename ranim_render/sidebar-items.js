@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["build_render_app","install_render_app"],"mod":["cpu_probe","extract","pipelines","primitives","profiling_utils","resource","schedule","setup","upload_probe","utils","world"],"struct":["RanimRenderApp","RenderSetup","ResolutionInfo"],"trait":["RenderAppExt"]};

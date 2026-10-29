@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["arpeggio","audio_demo"],"struct":["ScenesPlugin"]};

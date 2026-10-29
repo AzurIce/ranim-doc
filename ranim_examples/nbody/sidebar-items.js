@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["G","PALETTE","TRAIL_LEN","TRAIL_SAMPLE_EVERY"],"fn":["configure_render","nbody"],"struct":["Body","NBodyState","ScenesPlugin"]};

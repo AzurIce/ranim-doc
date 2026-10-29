@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["RotatingAnimation"],"trait":["RotatingAnim","RotatingRequirement"]};
