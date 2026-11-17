@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["MAX_SPANS","SPANS"],"fn":["span","take_frame"],"struct":["Span"]};

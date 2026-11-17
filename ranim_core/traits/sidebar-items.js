@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"macro":[["impl_interpolatable_for_int",1],["impl_interpolatable_tuple",1]],"mod":["transform"],"trait":["AlignSlice","Alignable","ArrangeSlice","Color","Discard","Empty","FillColor","Interpolatable","Opacity","Partial","PointsFunc","StrokeColor","StrokeWidth","With"]};

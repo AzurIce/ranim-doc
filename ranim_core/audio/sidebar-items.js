@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["MASTER_CHANNELS","MASTER_SAMPLE_RATE"],"fn":["decode","resample_to_master","write_wav"],"struct":["AudioClip","AudioError","AudioTrack"]};

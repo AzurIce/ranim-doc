@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Commands"],"fn":["init_tracing","output_command","preview_command","render_command","run_cli","select_scene"],"struct":["ProjectCli"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"attr":["output","scene","wasm_demo_doc"],"constant":["RANIM_CRATE_NAME"],"derive":["Alignable","Empty","Fill","Interpolatable","Opacity","Partial","PointsFunc","RotateTransform","ScaleTransform","ShiftTransform","Stroke"],"fn":["get_field_positions","impl_derive","ranim_core_path","ranim_path"],"mod":["scene","utils"],"struct":["OutputDef","SceneAttrs"]};

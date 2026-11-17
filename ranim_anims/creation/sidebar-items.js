@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["prepare_write"],"struct":["Create","CreateEval","UnCreate","Unwrite","Write","WriteEval"],"trait":["CreationRequirement","WritingRequirement"]};

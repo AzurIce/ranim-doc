@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["prepare_camera","single_camera"],"struct":["CameraFramePlugin"]};

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["MODELS"],"fn":["gltf_showcase","load_model"],"struct":["ScenesPlugin"]};

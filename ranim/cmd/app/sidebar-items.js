@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["count_nodes","kind_name","node_at_path","property","run_app","set_descendant_expansion","short_name","show_node_details","show_rate_curve","show_tree"],"struct":["InspectorApp","SceneSnapshot"]};

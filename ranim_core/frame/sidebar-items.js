@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["EvaluatedFrame","FrameItem","FrameItemMetadata"],"trait":["ErasedItems"],"type":["FrameItemId"]};

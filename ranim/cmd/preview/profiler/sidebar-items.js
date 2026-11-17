@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["PASS_PALETTE"],"enum":["ProfilerMetric"],"fn":["flatten_scopes","gpu_timer_features","pass_color","record_sample","share_bar","ui_cpu_spans","ui_gpu_passes","ui_profiler_window","ui_progress_chart","ui_stacked_legend","ui_summary","ui_uploads","x_to_sec"],"struct":["ProgressSample"]};

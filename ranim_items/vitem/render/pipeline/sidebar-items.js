@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["color","compute","depth","prepare_vitems"],"struct":["VItemColorPipeline","VItemComputePipeline","VItemDepthPipeline"]};

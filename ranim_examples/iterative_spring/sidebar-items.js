@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["C","K"],"fn":["configure_render","iterative_spring"],"struct":["ScenesPlugin","SpringState"]};

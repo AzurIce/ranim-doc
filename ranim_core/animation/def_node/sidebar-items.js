@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["AnimDefNodeContent","AnimDefRate"],"fn":["assert_valid_window"],"struct":["AnimDef","AnimDefNode"],"trait":["DynAnimDef","ItemAnimExt"]};
